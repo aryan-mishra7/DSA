@@ -1,14 +1,17 @@
 class Solution {
-private:
-int f(int n){
-    if(n==1||n==0)
-    return n;
-    return f(n-1)+f(n-2);
-}
 public:
     int fib(int n) {
         if(n<=1)
         return n;
-        return f(n-1)+f(n-2);
+        int a = 0;
+        int b = 1;
+        int sum = a+b;
+        for(int i=2;i<n;i++){
+            a = b;
+            b = sum;
+            sum = a+b;
+        }
+        return sum;
     }
 };
+/*can also be done through recusrion but time complexity is high*/

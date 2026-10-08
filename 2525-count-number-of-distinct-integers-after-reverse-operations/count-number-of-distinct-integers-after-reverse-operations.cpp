@@ -13,11 +13,11 @@ public:
             nums.push_back(rev);
         }
         sort(nums.begin(),nums.end());
-        int cnt = 0;
+        int cnt = 1;//cnt will be 1 because 0th element is always counted
         for(int i=0;i<nums.size()-1;i++){
             if(nums[i]!=nums[i+1])
             cnt++;
         }
-        return cnt+1;
+        return cnt;
     }
 };

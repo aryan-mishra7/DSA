@@ -16,6 +16,8 @@ public:
             ans.push_back(num[i]);
             return ans;
         }
+
+        //main logic for monotonic decreasing and random string
         for(int i=0;i<num.size();i++){
             char curr = num[i];
             if(cnt==k){
@@ -37,6 +39,8 @@ public:
             st.pop();
             cnt++;
         }
+
+        //ans mai dal do
         while(!st.empty()){
             ans.push_back(st.top());
             st.pop();

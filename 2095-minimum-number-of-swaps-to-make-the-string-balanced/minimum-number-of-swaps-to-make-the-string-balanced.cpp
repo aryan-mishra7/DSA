@@ -11,3 +11,4 @@ public:
         return (cnt+1)/2;
     }
 };
+//stack implementattion in previous submission

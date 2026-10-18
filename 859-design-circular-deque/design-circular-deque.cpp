@@ -12,13 +12,11 @@ class MyCircularDeque {
 private:
 void insertathead(node* &head,node* &tail,int value){
     node* newnode = new node(value);
-
     if(head==nullptr){
         head = newnode;
         tail = newnode;
         return;
     }
-
     newnode->next = head;
     head = newnode;
 }

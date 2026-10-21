@@ -13,7 +13,6 @@ class BrowserHistory {
 private:
     void insertattail(Node* &head,Node* &tail,string s){
         Node* newnode = new Node(s);
-
         if(head == nullptr){
             head = newnode;
             tail = newnode;

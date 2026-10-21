@@ -17,7 +17,8 @@ private:
         if(head == nullptr){
             head = newnode;
             tail = newnode;
-        } else{
+        } 
+        else{
             tail->next = newnode;
             newnode->prev = tail;
             tail = newnode;
@@ -47,7 +48,7 @@ public:
         return curr->s;
     }
     string forward(int steps) {
-        while(steps>0&&curr->next!=nullptr) {
+        while(steps>0&&curr->next!=nullptr){
             curr = curr->next;
             steps--;
         }

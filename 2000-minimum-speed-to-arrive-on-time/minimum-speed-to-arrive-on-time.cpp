@@ -3,11 +3,10 @@ private:
 bool check(int n,vector<int> nums,double hr){
     double sum = 0;
     for(int i=0;i<nums.size();i++){
-        if (i == nums.size() - 1) {
+        if(i==nums.size()-1)
             sum =sum +(double)nums[i]/n;
-        } else {
+        else
             sum = sum+(nums[i]+n-1)/n;
-        }
     }
     return sum<=hr;
 }

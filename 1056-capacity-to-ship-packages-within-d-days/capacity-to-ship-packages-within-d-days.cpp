@@ -1,6 +1,6 @@
 class Solution {
 private:
-int check(int n, vector<int>& weights) {
+int check(int n,vector<int>& weights){
     int cnt = 1;
     int sum = 0;
     for(int i=0;i<weights.size();i++){

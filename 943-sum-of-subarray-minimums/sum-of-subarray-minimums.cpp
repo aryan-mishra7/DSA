@@ -38,3 +38,5 @@ public:
         return sum;
     }
 };
+/*for each element we find the index of its next smaller element and the index of its prev smaller element 
+and then that element is minimum till the product of left*right subarrays*/

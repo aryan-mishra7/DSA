@@ -25,3 +25,6 @@ public:
         return ans;
     }
 };
+/*my approach is to add (common words in both string + extra words in s) to the ans*/
+/*Remember:
+when you encounter a character in order , you need to add all its occurrences present in s , not just one.*/

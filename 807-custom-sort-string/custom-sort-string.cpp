@@ -9,7 +9,7 @@ public:
         for(int i=0;i<s.length();i++)
             arr2[s[i]-'a']++;
         for(int i=0;i<order.size();i++){
-            if(arr1[order[i]-'a']<=arr2[order[i]-'a']&&arr1[order[i]-'a']>=1){
+            if(arr2[order[i]-'a']>0){
             for(int j = arr2[order[i]-'a'];j>0;j--){
             ans = ans + order[i];
             }

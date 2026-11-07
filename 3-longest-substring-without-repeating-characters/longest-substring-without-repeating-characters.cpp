@@ -7,7 +7,7 @@ public:
         int maxi = 1;
         while(r<s.length()){
             if(arr[s[r]]==1){
-                //agar agle element ki freq phle se he 1 hai to shrink karo
+                //agar add krne wale element ki freq phle se he 1 hai to shrink karo
                 arr[s[l]]--;
                 l++;
             }
